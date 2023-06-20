@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { AddCircleOutline, RemoveCircleOutline } from "@material-ui/icons";
+// import { AddCircleOutline, RemoveCircleOutline } from "@material-ui/icons";
 import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -201,9 +201,9 @@ const Cart = () => {
                 </ProductDetail>
                 <PriceDetail>
                   <ProductAmountContainer>
-                    <AddCircleOutline />
+{/*                     <AddCircleOutline /> */}
                     <ProductAmount>{product.quantity} </ProductAmount>
-                    <RemoveCircleOutline />
+{/*                     <RemoveCircleOutline /> */}
                   </ProductAmountContainer>
                   <ProductPrice>
                     $ {product.price * product.quantity}
